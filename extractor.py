@@ -29,7 +29,8 @@ def extrair_produtos(pdf_path, callback=None):
             colunas_esperadas = [
                 "Código interno",
                 "Ean",
-                "Quantidade"
+                "Quantidade",
+                "Total"
             ]
             
             for coluna in colunas_esperadas:
@@ -50,7 +51,7 @@ def extrair_produtos(pdf_path, callback=None):
                 df = pd.DataFrame(linhas, columns=cabecalho)
 
                 dados.append(
-                    df[["Código interno", "Ean", "Quantidade"]]
+                    df[["Código interno", "Ean", "Quantidade", "Total"]]
                 )
                 
                 # Atualiza progresso a cada página

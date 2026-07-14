@@ -15,7 +15,7 @@ st.title("📄 PDF -> Excel")
 
 st.write(
     "Faça o upload do PDF para gerar uma planilha Excel contendo "
-    "Código Interno, EAN e Quantidade."
+    "Código Interno, EAN, Quantidade e Total."
 )
 
 arquivo = st.file_uploader(
